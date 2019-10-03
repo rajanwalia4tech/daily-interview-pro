@@ -18,7 +18,7 @@ class Solution:
         l2Val = l2.val if l2 else 0
 
         digitSum = l1Val + l2Val + c
-        c = digitSum / 10
+        c = 1 if digitSum >= 10 else 0
         digitSum %= 10
 
         l1 = l1.next if l1 else None
