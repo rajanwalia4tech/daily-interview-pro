@@ -1,5 +1,5 @@
 def singleNumber(nums):
-    nums = sorted(nums)
+    nums.sort()
     previous = nums[0]
     count = 1
     for i in range(len(nums)-1):
