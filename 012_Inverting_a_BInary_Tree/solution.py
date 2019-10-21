@@ -9,7 +9,13 @@ class Node:
     if self.right: self.right.preorder()
 
 def invert(node):
-  # Fill this in.
+  if not node:  return
+  temp = node.left
+  node.left = node.right
+  node.right = temp
+
+  invert(temp) # left
+  invert(node.left) # right
 
 root = Node('a') 
 root.left = Node('b') 

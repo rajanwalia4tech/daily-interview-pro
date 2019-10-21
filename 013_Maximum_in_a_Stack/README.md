@@ -16,8 +16,7 @@ class MaxStack:
 
   def max(self):
     # Fill this in.
-```
-```
+
 s = MaxStack()
 s.push(1)
 s.push(2)
