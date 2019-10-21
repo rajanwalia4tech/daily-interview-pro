@@ -6,8 +6,7 @@ You are given a positive integer N which represents the number of steps in a sta
 ```
 def staircase(n):
   # Fill this in.
-```
-```
+  
 print staircase(4)
 # 5
 print staircase(5)
