@@ -1,8 +1,13 @@
+cache = [0] * 100
+cache[0] = 1
+cache[1] = 1
+
 def staircase(n):
-    if n == 1 or n == 2:
-        return n
+    if n <= 1:
+        return cache[n]
     else:
-        return staircase(n-1) + staircase(n-2)
+        cache[n] = staircase(n-1) + staircase(n-2)
+        return cache[n]
   # 1 1 2 3 5 8
   
 print staircase(4)
