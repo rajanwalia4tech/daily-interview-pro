@@ -4,7 +4,7 @@ function daily-interview-pro {
 	mkdir "$1";
 	cd "$1";
 	touch solution.py README.md;
-	echo "# $2" > README.md;
+	echo "# "$2"" > README.md;
 }
 
 question=$2
